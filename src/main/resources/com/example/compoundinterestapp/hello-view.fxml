@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.compoundinterestapp.HelloController"
+          hgap="10" vgap="10" padding="10">
+
+    <!-- שדה קלט עבור הסכום הראשוני -->
+    <Label text="סכום ראשוני:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="principalField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <!-- שדה קלט עבור שיעור ריבית -->
+    <Label text="שיעור ריבית (%):" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="rateField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <!-- שדה קלט עבור מספר הפעמים בשנה -->
+    <Label text="מספר פעמים בשנה:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="timesField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <!-- שדה קלט עבור מספר השנים -->
+    <Label text="מספר שנים:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="yearsField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <!-- כפתור חישוב -->
+    <Button text="חשב" fx:id="calculateButton" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <!-- תווית להצגת התוצאה -->
+    <Label fx:id="resultLabel" text="תוצאה תוצג כאן" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+
+    module-path /path/to/--javafx-sdk/lib --add-modules
+    javafx.controls,javafx.fxml
+
+</GridPane>
+
